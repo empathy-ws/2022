@@ -1908,7 +1908,11 @@ input, select, textarea {
 /* Wrappers */
 
 	#header-wrapper {
-		padding: 4.5em 0 3em 0;
+		padding: 4.5em 0 10em 0;
+		background-image: url("images/bg.png");
+		background-size: 100% ;
+		width: 100%;
+
 	}
 
 	#features-wrapper {
@@ -1937,27 +1941,6 @@ input, select, textarea {
 		display: inline-block;
 	}
 
-		#logo h1 {
-			background: #ff4486;
-			color: #fff;
-			border-radius: 6px;
-			font-family: 'Oleo Script', serif;
-			font-weight: 400;
-			padding: 0.25em 0.2em 0.25em 0.2em;
-			font-size: 3.25em;
-			letter-spacing: 0.05em;
-			display: inline-block;
-			vertical-align: middle;
-		}
-
-		#logo span {
-			font-weight: 800;
-			line-height: 4.5em;
-			letter-spacing: 0.025em;
-			font-size: 0.9em;
-			vertical-align: middle;
-			margin: 0 0 0 1.25em;
-		}
 
 /* Nav */
 
@@ -1986,7 +1969,7 @@ input, select, textarea {
 					transition: background-color .25s ease-in-out;
 					font-weight: 800;
 					letter-spacing: 0.025em;
-					color: #696969;
+					color: #dbdbdb;
 					text-decoration: none;
 					border-radius: 6px;
 					padding: 0.5em 1em 0.5em 1em;
@@ -2164,6 +2147,9 @@ input, select, textarea {
 		display: none;
 	}
 
+	html {
+		scroll-behavior: smooth;
+	  }
 	@media screen and (max-width: 980px) {
 
 		/* Basic */
@@ -2686,3 +2672,96 @@ input, select, textarea {
 			}
 
 	}
+
+	/*Table*/
+	table {
+		border-spacing: 1;
+		border-collapse: collapse;
+		background: white;
+		border-radius: 6px;
+		overflow: hidden;
+		max-width: 800px;
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+   }
+	table * {
+		position: relative;
+   }
+	table td, table th {
+		padding-left: 8px;
+   }
+	table thead tr {
+		height: 60px;
+		background: #27316c;
+		font-size: 16px;
+   }
+	table tbody tr {
+		height: 48px;
+		border-bottom: 1px solid #e3f1d5;
+   }
+	table tbody tr:last-child {
+		border: 0;
+   }
+	table td, table th {
+		text-align: left;
+   }
+	table td.l, table th.l {
+		text-align: right;
+   }
+	table td.c, table th.c {
+		text-align: center;
+   }
+	table td.r, table th.r {
+		text-align: center;
+   }
+	@media screen and (max-width: 35.5em) {
+		table {
+			display: block;
+	   }
+		table > *, table tr, table td, table th {
+			display: block;
+	   }
+		table thead {
+			display: none;
+	   }
+		table tbody tr {
+			height: auto;
+			padding: 8px 0;
+	   }
+		table tbody tr td {
+			padding-left: 45%;
+			margin-bottom: 12px;
+	   }
+		table tbody tr td:last-child {
+			margin-bottom: 0;
+	   }
+		table tbody tr td:before {
+			position: absolute;
+			font-weight: 700;
+			width: 40%;
+			left: 10px;
+			top: 0;
+	   }
+		table tbody tr td:nth-child(1):before {
+			content: "Code";
+	   }
+		table tbody tr td:nth-child(2):before {
+			content: "Stock";
+	   }
+		table tbody tr td:nth-child(3):before {
+			content: "Cap";
+	   }
+		table tbody tr td:nth-child(4):before {
+			content: "Inch";
+	   }
+		table tbody tr td:nth-child(5):before {
+			content: "Box Type";
+	   }
+   }
+
+	blockquote {
+		color: white;
+		text-align: center;
+   }
+	

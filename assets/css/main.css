@@ -1910,7 +1910,7 @@ input, select, textarea {
 	#header-wrapper {
 		padding: 4.5em 0 10em 0;
 		background-image: url("images/bg.png");
-		background-size: 100% ;
+		background-size: 100% 100%;
 		width: 100%;
 
 	}
@@ -2764,4 +2764,11 @@ input, select, textarea {
 		color: white;
 		text-align: center;
    }
-	
+
+   .title{
+		text-align: center; 
+		color: white; 
+		font-size: 40px; 
+		text-shadow: 2px 2px #1d1d1d; 
+		line-height: 1.3;
+   }

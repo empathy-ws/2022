@@ -2729,7 +2729,7 @@ input, select, textarea {
 			height: auto;
 			padding: 8px 0;
 	   }
-		table tbody tr td {
+		table.program tbody tr td {
 			padding-left: 45%;
 			margin-bottom: 12px;
 	   }
@@ -2743,21 +2743,13 @@ input, select, textarea {
 			left: 10px;
 			top: 0;
 	   }
-		table tbody tr td:nth-child(1):before {
-			content: "Code";
+		table.program tbody tr td:nth-child(1):before {
+			content: "Time";
 	   }
-		table tbody tr td:nth-child(2):before {
-			content: "Stock";
+		table.program tbody tr td:nth-child(2):before {
+			content: "Phase";
 	   }
-		table tbody tr td:nth-child(3):before {
-			content: "Cap";
-	   }
-		table tbody tr td:nth-child(4):before {
-			content: "Inch";
-	   }
-		table tbody tr td:nth-child(5):before {
-			content: "Box Type";
-	   }
+
    }
 
 	blockquote {
@@ -2779,5 +2771,5 @@ input, select, textarea {
 	font-size: 30px; 
 	text-shadow: 2px 2px #1d1d1d; 
 	margin-top: 30px;
-	line-height: 2.2;
+	line-height: 1.3;
 }

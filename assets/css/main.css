@@ -1980,7 +1980,7 @@ input, select, textarea {
 				}
 
 				#nav ul li:hover a, #nav ul li:hover span {
-					background: #fff;
+					background: rgb(14, 14, 14);
 				}
 
 				#nav ul li.active a, #nav ul li.active span {

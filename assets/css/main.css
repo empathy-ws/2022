@@ -1,5 +1,5 @@
 @import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Oleo+Script:400|Open+Sans:300,300italic,600,600italic,800");
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script:400|Open+Sans:400,400italic,600,600italic,800");
 
 /*
 	Verti by HTML5 UP
@@ -23,7 +23,7 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -50,6 +50,19 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+td span {
+	transform-origin: 0 50%;
+	transform: rotate(-90deg); 
+	white-space: nowrap; 
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	font-weight: bold;
+	font-size: x-large;
+  }
+
 
 body {
 	-webkit-text-size-adjust: none;
@@ -2680,7 +2693,6 @@ input, select, textarea {
 		background: white;
 		border-radius: 6px;
 		overflow: hidden;
-		max-width: 800px;
 		width: 100%;
 		margin: 0 auto;
 		position: relative;
@@ -2696,9 +2708,10 @@ input, select, textarea {
 		background: #27316c;
 		font-size: 16px;
    }
-	table tbody tr {
+	table.program tbody tr {
 		height: 48px;
-		border-bottom: 1px solid #e3f1d5;
+		background-color: rgb(233, 233, 233);
+		border-bottom: 1px solid #525252;
    }
 	table tbody tr:last-child {
 		border: 0;
@@ -2715,42 +2728,7 @@ input, select, textarea {
 	table td.r, table th.r {
 		text-align: center;
    }
-	@media screen and (max-width: 35.5em) {
-		table {
-			display: block;
-	   }
-		table > *, table tr, table td, table th {
-			display: block;
-	   }
-		table thead {
-			display: none;
-	   }
-		table tbody tr {
-			height: auto;
-			padding: 8px 0;
-	   }
-		table.program tbody tr td {
-			padding-left: 45%;
-			margin-bottom: 12px;
-	   }
-		table tbody tr td:last-child {
-			margin-bottom: 0;
-	   }
-		table tbody tr td:before {
-			position: absolute;
-			font-weight: 700;
-			width: 40%;
-			left: 10px;
-			top: 0;
-	   }
-		table.program tbody tr td:nth-child(1):before {
-			content: "Time";
-	   }
-		table.program tbody tr td:nth-child(2):before {
-			content: "Phase";
-	   }
 
-   }
 
 	blockquote {
 		color: white;

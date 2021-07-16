@@ -1574,12 +1574,11 @@ input, select, textarea {
 			border-top: solid 1px #eee;
 		}
 
-			table tr:first-child {
-				border-top: 0;
-			}
+		table tr:first-child {
+			border-top: 0;
+		}
 
 		table td.hours {
-			
 			white-space: nowrap; 
 		}
 		table td {		
@@ -2714,12 +2713,10 @@ input, select, textarea {
    }
 	table.program tbody tr {
 		height: 48px;
-		background-color: rgb(233, 233, 233);
+		background-color: rgb(243, 243, 243);
 		border-bottom: 1px solid #525252;
    }
-	table tbody tr:last-child {
-		border: 0;
-   }
+
 	table td, table th {
 		text-align: left;
    }

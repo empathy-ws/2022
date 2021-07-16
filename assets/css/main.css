@@ -1578,7 +1578,11 @@ input, select, textarea {
 				border-top: 0;
 			}
 
-		table td {
+		table td.hours {
+			
+			white-space: nowrap; 
+		}
+		table td {		
 			padding: 0.5em 1em 0.5em 1em;
 		}
 

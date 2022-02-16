@@ -1924,7 +1924,7 @@ input, select, textarea {
 /* Wrappers */
 
 	#header-wrapper {
-		padding: 4.5em 0 11em 0;
+		padding: 4.5em 0 15em 0;
 		/*background: url(images/bg.jpg) no-repeat center center fixed; */
 		background: #2c2a2b;  /* fallback colour. Make sure this is just one solid colour. */
 		background: -webkit-linear-gradient(rgba(44, 44, 44, 0.5), rgba(15, 15, 15, 0.6)), url(images/bg.jpg);
@@ -2160,6 +2160,25 @@ input, select, textarea {
 				font-size: 11pt;
 			}
 
+			/* Title */
+		
+			.title{
+				text-align: center; 
+				color: white; 
+				font-size: 40px; 
+				text-shadow: 2px 2px #1d1d1d; 
+				line-height: 1.3;
+		   }
+		
+			.subtitle{
+				text-align: center; 
+				color: white; 
+				font-size: 30px; 
+				text-shadow: 2px 2px #1d1d1d; 
+				margin-top: 30px;
+				line-height: 1.3;
+			}
+
 	}
 
 /* Medium */
@@ -2193,15 +2212,24 @@ input, select, textarea {
 			section.last, article.last {
 				margin-bottom: 0 !important;
 			}
-			
-		/* Title */
-			.title {
-				font-size: 30px;
+	
+			.title{
+				text-align: center; 
+				color: white; 
+				font-size: 30px; 
+				margin-top: -40px;
+				text-shadow: 2px 2px #1d1d1d; 
+				line-height: 1.3;
+		   }
+		
+			.subtitle{
+				text-align: center; 
+				color: white; 
+				font-size: 20px; 
+				text-shadow: 2px 2px #1d1d1d; 
+				margin-top: 30px;
+				line-height: 1.3;
 			}
-			.subtitle {
-				font-size: 20px;
-			}
-
 		/* Image */
 
 			.image.left {
@@ -2748,20 +2776,3 @@ input, select, textarea {
 		color: white;
 		text-align: center;
    }
-
-   .title{
-		text-align: center; 
-		color: white; 
-		font-size: 40px; 
-		text-shadow: 2px 2px #1d1d1d; 
-		line-height: 1.3;
-   }
-
-   .subtitle{
-	text-align: center; 
-	color: white; 
-	font-size: 30px; 
-	text-shadow: 2px 2px #1d1d1d; 
-	margin-top: 30px;
-	line-height: 1.3;
-}

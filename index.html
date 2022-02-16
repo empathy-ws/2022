@@ -13,6 +13,7 @@
 		<link rel="icon" href="images/fav.png">
 	</head>
 	<body class="is-preload left-sidebar">
+		<a onclick="topFunction()" id="floatingB" title="Go to top"><img style="width: 100%" src="images/fav.png"></img></a>
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -213,6 +214,28 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				//Get the button
+				var mybutton = document.getElementById("floatingB");
+
+				// When the user scrolls down 20px from the top of the document, show the button
+				window.onscroll = function() {scrollFunction()};
+
+				function scrollFunction() {
+					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+						mybutton.style.display = "block";
+					} else {
+						mybutton.style.display = "none";
+					}
+				}
+
+				// When the user clicks on the button, scroll to the top of the document
+				function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+				}
+			</script>
+
 
 	</body>
 </html>

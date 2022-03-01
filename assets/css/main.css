@@ -63,8 +63,14 @@ td span {
 	font-size: x-large;
   }
 
-/* Floating button */
-  
+  ul.topicsUL {
+	columns: 2;
+	-webkit-columns: 2;
+	-moz-columns: 2;
+  }
+
+/* Floating button */  
+
   #floatingB {
 	position: fixed;
 	bottom: 20px;
